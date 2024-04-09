@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configura la Partita</title>
+    <title>Configurazioni del Gioco</title>
 </head>
 <body>
-    <h1>Configura la Partita</h1>
+    <h1>Configurazioni del Gioco</h1>
     <form action="game.php" method="post">
-        <label for="players">Numero di Giocatori:</label>
-        <input type="number" id="players" name="players" min="1" required>
+        <label for="num_players">Seleziona il numero di giocatori:</label>
+        <select name="num_players" id="num_players">
+            <option value="1">1 giocatore</option>
+            <option value="2">2 giocatori</option>
+            <option value="3">3 giocatori</option>
+            <option value="4">4 giocatori</option>
+        </select>
         <br>
-        <label for="rounds">Numero di Round:</label>
-        <input type="number" id="rounds" name="rounds" min="1" required>
+        <label for="num_rounds">Numero di round da giocare:</label>
+        <input type="number" name="num_rounds" id="num_rounds" min="1" value="3">
         <br>
-        <button type="submit">Inizia la Partita</button>
+        <input type="submit" value="Inizia la partita">
     </form>
 </body>
 </html>
