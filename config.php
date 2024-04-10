@@ -1,6 +1,7 @@
 <?php 
 session_start();
 $_SESSION['playerid'] = 0;
+$_SESSION['round'] = 0;
 $lista=file("parole.txt", FILE_IGNORE_NEW_LINES);
 $_SESSION["target"]=str_split($lista[mt_rand(0,count($lista)-1)]);
 $_SESSION["indovinate"]=[$_SESSION["target"][0]];
