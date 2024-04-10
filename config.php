@@ -1,7 +1,6 @@
 <?php 
 session_start();
-$_SESSION['punti'];
-$_SESSION['playerid=0'];
+$_SESSION['playerid'] = 0;
 $lista=file("parole.txt", FILE_IGNORE_NEW_LINES);
 $_SESSION["target"]=str_split($lista[mt_rand(0,count($lista)-1)]);
 ?>
