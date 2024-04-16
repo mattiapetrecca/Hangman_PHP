@@ -22,21 +22,21 @@ for($i = 1; $i < count($_SESSION["target"]); $i++){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container w-50">
+    <div class="container w-50 text-center">
         <div class="row">
             <div class="col gy-5">
                 <form method="GET" action=game.php>
                     <div class="row">
                         <div class="col">
-                            <input type="number" name="roundmax" placeholder="Numero round" min="1" max="5" required>
+                            <input class="form-control" type="number" name="roundmax" placeholder="Numero round" min="1" max="5" required>
                         </div>
                         <div class="col">
-                            <input type="number" name="playercount" placeholder="Numero giocatori" min="2" max="4" required>
+                            <input class="form-control" type="number" name="playercount" placeholder="Numero giocatori" min="2" max="4" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col gy-3">
-                            <input class="w-100 btn btn-primary" type="submit" value="INVIA">
+                            <input class="w-25 btn btn-primary" type="submit" value="INVIA">
                         </div>
                     </div>
                 </form>
